@@ -4,10 +4,35 @@
   "lockfileVersion": 1,
   "requires": true,
   "dependencies": {
+    "@types/bootstrap": {
+      "version": "4.3.2",
+      "resolved": "https://registry.npmjs.org/@types/bootstrap/-/bootstrap-4.3.2.tgz",
+      "integrity": "sha512-ArJM2BsZ6KvPb7M3PGWNjlriFYP6gh3hINk76TTVXBqUiPYFOeyXA08gsVFSIjUqMitregBEqT79rvfgXEiLQQ==",
+      "dev": true,
+      "requires": {
+        "@types/jquery": "*",
+        "popper.js": "^1.14.1"
+      }
+    },
     "@types/history": {
       "version": "4.6.0",
       "resolved": "https://registry.npmjs.org/@types/history/-/history-4.6.0.tgz",
       "integrity": "sha1-CT1n7XgNiJyVQ/bcok6+4La5/EU=",
+      "dev": true
+    },
+    "@types/jquery": {
+      "version": "3.3.36",
+      "resolved": "https://registry.npmjs.org/@types/jquery/-/jquery-3.3.36.tgz",
+      "integrity": "sha512-jHL8J5y5fJ0+C9zCTkeOvX4zqRnPug3r6JhAqAYl2YyBCYHiXTbZSH0MRCpayZADed5TigPjH92dEKczUFT2TQ==",
+      "dev": true,
+      "requires": {
+        "@types/sizzle": "*"
+      }
+    },
+    "@types/prop-types": {
+      "version": "15.7.3",
+      "resolved": "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.3.tgz",
+      "integrity": "sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==",
       "dev": true
     },
     "@types/react": {
@@ -15,6 +40,15 @@
       "resolved": "https://registry.npmjs.org/@types/react/-/react-15.0.35.tgz",
       "integrity": "sha1-RnKSPNUC0D4UgNA4FuvFpxn7hto=",
       "dev": true
+    },
+    "@types/react-bootstrap": {
+      "version": "0.32.21",
+      "resolved": "https://registry.npmjs.org/@types/react-bootstrap/-/react-bootstrap-0.32.21.tgz",
+      "integrity": "sha512-AV/6cMUBbKArEQcjXEzpoHexHi6hJL0cH3Vcw9qI4Ob2g/XFRvyTAFdMlGlp8HZmOHXL35PdF0K75Z31Po87qg==",
+      "dev": true,
+      "requires": {
+        "@types/react": "*"
+      }
     },
     "@types/react-dom": {
       "version": "15.5.1",
@@ -54,6 +88,12 @@
         "@types/react": "15.0.35",
         "@types/react-router": "4.0.12"
       }
+    },
+    "@types/sizzle": {
+      "version": "2.3.2",
+      "resolved": "https://registry.npmjs.org/@types/sizzle/-/sizzle-2.3.2.tgz",
+      "integrity": "sha512-7EJYyKTL7tFR8+gDbB6Wwz/arpGa0Mywk1TJbNzKzHtzbwVmY4HR9WqS5VV7dsBUKQmPNr192jHr/VpBluj/hg==",
+      "dev": true
     },
     "@types/webpack-env": {
       "version": "1.13.0",
@@ -4661,7 +4701,8 @@
         },
         "ansi-regex": {
           "version": "2.1.1",
-          "bundled": true
+          "bundled": true,
+          "optional": true
         },
         "aproba": {
           "version": "1.2.0",
@@ -4679,11 +4720,13 @@
         },
         "balanced-match": {
           "version": "1.0.0",
-          "bundled": true
+          "bundled": true,
+          "optional": true
         },
         "brace-expansion": {
           "version": "1.1.11",
           "bundled": true,
+          "optional": true,
           "requires": {
             "balanced-match": "1.0.0",
             "concat-map": "0.0.1"
@@ -4696,15 +4739,18 @@
         },
         "code-point-at": {
           "version": "1.1.0",
-          "bundled": true
+          "bundled": true,
+          "optional": true
         },
         "concat-map": {
           "version": "0.0.1",
-          "bundled": true
+          "bundled": true,
+          "optional": true
         },
         "console-control-strings": {
           "version": "1.1.0",
-          "bundled": true
+          "bundled": true,
+          "optional": true
         },
         "core-util-is": {
           "version": "1.0.2",
@@ -4807,7 +4853,8 @@
         },
         "inherits": {
           "version": "2.0.3",
-          "bundled": true
+          "bundled": true,
+          "optional": true
         },
         "ini": {
           "version": "1.3.5",
@@ -4817,6 +4864,7 @@
         "is-fullwidth-code-point": {
           "version": "1.0.0",
           "bundled": true,
+          "optional": true,
           "requires": {
             "number-is-nan": "1.0.1"
           }
@@ -4829,17 +4877,20 @@
         "minimatch": {
           "version": "3.0.4",
           "bundled": true,
+          "optional": true,
           "requires": {
             "brace-expansion": "1.1.11"
           }
         },
         "minimist": {
           "version": "0.0.8",
-          "bundled": true
+          "bundled": true,
+          "optional": true
         },
         "minipass": {
           "version": "2.2.4",
           "bundled": true,
+          "optional": true,
           "requires": {
             "safe-buffer": "5.1.1",
             "yallist": "3.0.2"
@@ -4856,6 +4907,7 @@
         "mkdirp": {
           "version": "0.5.1",
           "bundled": true,
+          "optional": true,
           "requires": {
             "minimist": "0.0.8"
           }
@@ -4928,7 +4980,8 @@
         },
         "number-is-nan": {
           "version": "1.0.1",
-          "bundled": true
+          "bundled": true,
+          "optional": true
         },
         "object-assign": {
           "version": "4.1.1",
@@ -4938,6 +4991,7 @@
         "once": {
           "version": "1.4.0",
           "bundled": true,
+          "optional": true,
           "requires": {
             "wrappy": "1.0.2"
           }
@@ -5013,7 +5067,8 @@
         },
         "safe-buffer": {
           "version": "5.1.1",
-          "bundled": true
+          "bundled": true,
+          "optional": true
         },
         "safer-buffer": {
           "version": "2.1.2",
@@ -5043,6 +5098,7 @@
         "string-width": {
           "version": "1.0.2",
           "bundled": true,
+          "optional": true,
           "requires": {
             "code-point-at": "1.1.0",
             "is-fullwidth-code-point": "1.0.0",
@@ -5060,6 +5116,7 @@
         "strip-ansi": {
           "version": "3.0.1",
           "bundled": true,
+          "optional": true,
           "requires": {
             "ansi-regex": "2.1.1"
           }
@@ -5098,11 +5155,13 @@
         },
         "wrappy": {
           "version": "1.0.2",
-          "bundled": true
+          "bundled": true,
+          "optional": true
         },
         "yallist": {
           "version": "3.0.2",
-          "bundled": true
+          "bundled": true,
+          "optional": true
         }
       }
     },
@@ -6743,9 +6802,9 @@
       }
     },
     "jquery": {
-      "version": "3.2.1",
-      "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.2.1.tgz",
-      "integrity": "sha1-XE2d5lKvbNCncBVKYxu6ErAVx4c=",
+      "version": "3.5.0",
+      "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.5.0.tgz",
+      "integrity": "sha512-Xb7SVYMvygPxbFMpTFQiHh1J7HClEaThguL15N/Gg37Lri/qKyhRGZYzHRyLH8Stq3Aow0LsHO2O2ci86fCrNQ==",
       "dev": true
     },
     "js-base64": {
@@ -8928,36 +8987,6 @@
         "uniqs": "2.0.0"
       }
     },
-    "postinstall": {
-      "version": "0.1.2",
-      "resolved": "https://registry.npmjs.org/postinstall/-/postinstall-0.1.2.tgz",
-      "integrity": "sha512-3nhuBvntjQNozl3AkvjzDVbNQEOibBJmi+0Dcw25RL36DVFaEa8AEWOH+L+VBZhIbMXfnmNLpZTBVQ93JUPIww==",
-      "requires": {
-        "fs-extra": "5.0.0",
-        "glob": "7.1.2",
-        "resolve-pkg": "1.0.0"
-      },
-      "dependencies": {
-        "fs-extra": {
-          "version": "5.0.0",
-          "resolved": "https://registry.npmjs.org/fs-extra/-/fs-extra-5.0.0.tgz",
-          "integrity": "sha512-66Pm4RYbjzdyeuqudYqhFiNBbCIuI9kgRqLPSHIlXHidW8NIQtVdkM1yeZ4lXwuhbTETv3EUGMNHAAw6hiundQ==",
-          "requires": {
-            "graceful-fs": "4.1.11",
-            "jsonfile": "4.0.0",
-            "universalify": "0.1.1"
-          }
-        },
-        "jsonfile": {
-          "version": "4.0.0",
-          "resolved": "https://registry.npmjs.org/jsonfile/-/jsonfile-4.0.0.tgz",
-          "integrity": "sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=",
-          "requires": {
-            "graceful-fs": "4.1.11"
-          }
-        }
-      }
-    },
     "prelude-ls": {
       "version": "1.1.2",
       "resolved": "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.1.2.tgz",
@@ -10046,7 +10075,8 @@
             },
             "ansi-regex": {
               "version": "2.1.1",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "aproba": {
               "version": "1.1.1",
@@ -10089,7 +10119,8 @@
             },
             "balanced-match": {
               "version": "0.4.2",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "bcrypt-pbkdf": {
               "version": "1.0.1",
@@ -10102,6 +10133,7 @@
             "block-stream": {
               "version": "0.0.9",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "inherits": "2.0.3"
               }
@@ -10109,6 +10141,7 @@
             "boom": {
               "version": "2.10.1",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "hoek": "2.16.3"
               }
@@ -10116,6 +10149,7 @@
             "brace-expansion": {
               "version": "1.1.7",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "balanced-match": "0.4.2",
                 "concat-map": "0.0.1"
@@ -10123,7 +10157,8 @@
             },
             "buffer-shims": {
               "version": "1.0.0",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "caseless": {
               "version": "0.12.0",
@@ -10137,26 +10172,31 @@
             },
             "code-point-at": {
               "version": "1.1.0",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "combined-stream": {
               "version": "1.0.5",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "delayed-stream": "1.0.0"
               }
             },
             "concat-map": {
               "version": "0.0.1",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "console-control-strings": {
               "version": "1.1.0",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "core-util-is": {
               "version": "1.0.2",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "cryptiles": {
               "version": "2.0.5",
@@ -10196,7 +10236,8 @@
             },
             "delayed-stream": {
               "version": "1.0.0",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "delegates": {
               "version": "1.0.0",
@@ -10218,7 +10259,8 @@
             },
             "extsprintf": {
               "version": "1.0.2",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "forever-agent": {
               "version": "0.6.1",
@@ -10237,11 +10279,13 @@
             },
             "fs.realpath": {
               "version": "1.0.0",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "fstream": {
               "version": "1.0.11",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "graceful-fs": "4.1.11",
                 "inherits": "2.0.3",
@@ -10292,6 +10336,7 @@
             "glob": {
               "version": "7.1.2",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "fs.realpath": "1.0.0",
                 "inflight": "1.0.6",
@@ -10303,7 +10348,8 @@
             },
             "graceful-fs": {
               "version": "4.1.11",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "har-schema": {
               "version": "1.0.5",
@@ -10337,7 +10383,8 @@
             },
             "hoek": {
               "version": "2.16.3",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "http-signature": {
               "version": "1.1.1",
@@ -10352,6 +10399,7 @@
             "inflight": {
               "version": "1.0.6",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "once": "1.4.0",
                 "wrappy": "1.0.2"
@@ -10359,7 +10407,8 @@
             },
             "inherits": {
               "version": "2.0.3",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "ini": {
               "version": "1.3.4",
@@ -10369,6 +10418,7 @@
             "is-fullwidth-code-point": {
               "version": "1.0.0",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "number-is-nan": "1.0.1"
               }
@@ -10380,7 +10430,8 @@
             },
             "isarray": {
               "version": "1.0.0",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "isstream": {
               "version": "0.1.2",
@@ -10443,11 +10494,13 @@
             },
             "mime-db": {
               "version": "1.27.0",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "mime-types": {
               "version": "2.1.15",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "mime-db": "1.27.0"
               }
@@ -10455,17 +10508,20 @@
             "minimatch": {
               "version": "3.0.4",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "brace-expansion": "1.1.7"
               }
             },
             "minimist": {
               "version": "0.0.8",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "mkdirp": {
               "version": "0.5.1",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "minimist": "0.0.8"
               }
@@ -10513,7 +10569,8 @@
             },
             "number-is-nan": {
               "version": "1.0.1",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "oauth-sign": {
               "version": "0.8.2",
@@ -10528,6 +10585,7 @@
             "once": {
               "version": "1.4.0",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "wrappy": "1.0.2"
               }
@@ -10553,7 +10611,8 @@
             },
             "path-is-absolute": {
               "version": "1.0.1",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "performance-now": {
               "version": "0.2.0",
@@ -10562,7 +10621,8 @@
             },
             "process-nextick-args": {
               "version": "1.0.7",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "punycode": {
               "version": "1.4.1",
@@ -10595,6 +10655,7 @@
             "readable-stream": {
               "version": "2.2.9",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "buffer-shims": "1.0.0",
                 "core-util-is": "1.0.2",
@@ -10637,13 +10698,15 @@
             "rimraf": {
               "version": "2.6.1",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "glob": "7.1.2"
               }
             },
             "safe-buffer": {
               "version": "5.0.1",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "semver": {
               "version": "5.3.0",
@@ -10694,6 +10757,7 @@
             "string-width": {
               "version": "1.0.2",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "code-point-at": "1.1.0",
                 "is-fullwidth-code-point": "1.0.0",
@@ -10703,6 +10767,7 @@
             "string_decoder": {
               "version": "1.0.1",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "safe-buffer": "5.0.1"
               }
@@ -10715,6 +10780,7 @@
             "strip-ansi": {
               "version": "3.0.1",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "ansi-regex": "2.1.1"
               }
@@ -10727,6 +10793,7 @@
             "tar": {
               "version": "2.2.1",
               "bundled": true,
+              "optional": true,
               "requires": {
                 "block-stream": "0.0.9",
                 "fstream": "1.0.11",
@@ -10776,7 +10843,8 @@
             },
             "util-deprecate": {
               "version": "1.0.2",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             },
             "uuid": {
               "version": "3.0.1",
@@ -10801,7 +10869,8 @@
             },
             "wrappy": {
               "version": "1.0.2",
-              "bundled": true
+              "bundled": true,
+              "optional": true
             }
           }
         },
@@ -11630,21 +11699,6 @@
       "resolved": "https://registry.npmjs.org/resolve-pathname/-/resolve-pathname-2.1.0.tgz",
       "integrity": "sha1-6DWIAbhrg7F1YNTjw4LXrvIQCUQ=",
       "dev": true
-    },
-    "resolve-pkg": {
-      "version": "1.0.0",
-      "resolved": "https://registry.npmjs.org/resolve-pkg/-/resolve-pkg-1.0.0.tgz",
-      "integrity": "sha1-4ZoV54rKLhJEYdySsuOUPvk0lNk=",
-      "requires": {
-        "resolve-from": "2.0.0"
-      },
-      "dependencies": {
-        "resolve-from": {
-          "version": "2.0.0",
-          "resolved": "https://registry.npmjs.org/resolve-from/-/resolve-from-2.0.0.tgz",
-          "integrity": "sha1-lICrIOlP+h2egKgEx+oUdhGWa1c="
-        }
-      }
     },
     "resolve-url": {
       "version": "0.2.1",
